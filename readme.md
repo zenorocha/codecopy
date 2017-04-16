@@ -6,9 +6,9 @@
 
 This browser extension available for:
 
-| <a href="#"><img src="https://cloud.githubusercontent.com/assets/398893/15528951/e9f5dc0a-21fd-11e6-86e7-8a0cad6e7548.png" width="48px" height="48px" alt="Chrome logo"></a> | <a href="#"><img src="https://cloud.githubusercontent.com/assets/398893/15528952/ea095cc6-21fd-11e6-9aae-d67479edd442.png" width="48px" height="48px" alt="Firefox logo"></a> | <a href="#"><img src="https://cloud.githubusercontent.com/assets/398893/15528953/ea1ef482-21fd-11e6-9ba2-252aa0bcc1d2.png" width="48px" height="48px" alt="Opera logo"></a> |
+| <a href="https://chrome.google.com/webstore/detail/codecopy/fkbfebkcoelajmhanocgppanfoojcdmg"><img src="https://cloud.githubusercontent.com/assets/398893/15528951/e9f5dc0a-21fd-11e6-86e7-8a0cad6e7548.png" width="48px" height="48px" alt="Chrome logo"></a> | <a href="#"><img src="https://cloud.githubusercontent.com/assets/398893/15528952/ea095cc6-21fd-11e6-9aae-d67479edd442.png" width="48px" height="48px" alt="Firefox logo"></a> | <a href="#"><img src="https://cloud.githubusercontent.com/assets/398893/15528953/ea1ef482-21fd-11e6-9ba2-252aa0bcc1d2.png" width="48px" height="48px" alt="Opera logo"></a> |
 |:---:|:---:|:---:|
-| [Chrome](#) | [Firefox](#) | [Opera](#) |
+| [Chrome](https://chrome.google.com/webstore/detail/codecopy/fkbfebkcoelajmhanocgppanfoojcdmg) | [Firefox](#) | [Opera](#) |
 
 ## Setup
 
