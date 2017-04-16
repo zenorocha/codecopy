@@ -18,6 +18,17 @@
   "content_scripts": [{
     "css": ["styles/main.css"],
     "js": ["scripts/main.js"],
-    "matches": ["https://github.com/*"]
+    "matches": [
+      "https://github.com/*",
+      "http://stackexchange.com/*",
+      "https://stackexchange.com/*",
+      "http://*.stackexchange.com/*",
+      "https://*.stackexchange.com/*",
+      "https://serverfault.com/*",
+      "https://superuser.com/*",
+      "https://askubuntu.com/*",
+      "http://stackoverflow.com/*",
+      "https://stackoverflow.com/*"
+    ]
   }]
 }

@@ -467,17 +467,27 @@
     .codecopy .BtnGroup-form:hover + .BtnGroup-form .BtnGroup-item {
       border-left-width: 0; }
   .codecopy .codecopy-btn {
+    box-shadow: none;
+    min-height: initial;
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
-    padding: 3px 6px;
     position: absolute;
-    right: 5px;
-    top: 5px; }
+    padding: 2px 6px;
+    right: 0;
+    top: 0; }
     .codecopy .codecopy-btn .codecopy-btn-icon {
       margin-top: -3px;
       position: relative;
-      top: 3px; }
-    .codecopy .codecopy-btn:focus {
+      top: 3px;
+      padding: 0;
+      vertical-align: initial;
+      min-height: initial; }
+    .codecopy .codecopy-btn:hover, .codecopy .codecopy-btn:focus {
       box-shadow: none; }
   .codecopy:hover .codecopy-btn {
     opacity: 1; }
+
+.codecopy.codecopy-github .codecopy-btn {
+  padding: 3px 6px;
+  right: 5px;
+  top: 5px; }
