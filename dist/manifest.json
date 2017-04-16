@@ -3,7 +3,7 @@
   "name": "CodeCopy",
   "description": "Because copy to clipboard buttons should exist on every code snippet",
   "homepage_url": "https://github.com/zenorocha/codecopy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "applications": {
     "gecko": {
       "id": "codecopy@clipboardjs.com",
