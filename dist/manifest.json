@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "CodeCopy",
+  "description": "Because copy to clipboard buttons should exist on every code snippet",
+  "homepage_url": "https://github.com/zenorocha/codecopy",
+  "version": "0.1.0",
+  "applications": {
+    "gecko": {
+      "id": "codecopy@clipboardjs.com",
+      "strict_min_version": "45.0"
+    }
+  },
+  "icons": {
+    "16" : "images/icon-16.png",
+    "48" : "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [{
+    "css": ["styles/main.css"],
+    "js": ["scripts/main.js"],
+    "matches": ["https://github.com/*"]
+  }]
+}
