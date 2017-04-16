@@ -21,6 +21,7 @@
     "matches": [
       "https://developer.mozilla.org/*",
       "https://medium.com/*",
+      "https://www.npmjs.com/*",
       "https://github.com/*",
       "http://stackexchange.com/*",
       "https://stackexchange.com/*",
