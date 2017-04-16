@@ -19,6 +19,7 @@
     padding: 2px 6px;
     right: 0;
     top: 0;
+    z-index: 1;
 
     .codecopy-btn-icon {
       margin-top: -3px;
@@ -41,7 +42,7 @@
   }
 }
 
-.codecopy.codecopy-github .codecopy-btn {
+.codecopy.codecopy-lg .codecopy-btn {
   padding: 3px 6px;
   right: 5px;
   top: 5px;

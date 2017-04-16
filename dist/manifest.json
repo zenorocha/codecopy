@@ -19,6 +19,7 @@
     "css": ["styles/main.css"],
     "js": ["scripts/main.js"],
     "matches": [
+      "https://developer.mozilla.org/*",
       "https://github.com/*",
       "http://stackexchange.com/*",
       "https://stackexchange.com/*",
