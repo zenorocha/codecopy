@@ -23,6 +23,7 @@
       "https://medium.com/*",
       "https://www.npmjs.com/*",
       "https://github.com/*",
+      "https://gist.github.com/*",
       "http://stackexchange.com/*",
       "https://stackexchange.com/*",
       "http://*.stackexchange.com/*",
