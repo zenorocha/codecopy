@@ -4,6 +4,7 @@
   "description": "Because copy to clipboard buttons should exist on every code snippet",
   "homepage_url": "https://github.com/zenorocha/codecopy",
   "version": "0.4.0",
+  "author": "Zeno Rocha",
   "applications": {
     "gecko": {
       "id": "codecopy@clipboardjs.com",
