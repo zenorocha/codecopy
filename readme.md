@@ -12,6 +12,10 @@ This browser extension available for:
 |:---:|:---:|
 | [Chrome](https://chrome.google.com/webstore/detail/codecopy/fkbfebkcoelajmhanocgppanfoojcdmg) | [Firefox](https://addons.mozilla.org/en-US/firefox/addon/codecopy/) |
 
+## Screenshots
+
+![Screenshots](https://cloud.githubusercontent.com/assets/398893/25569031/5840911a-2dc3-11e7-8445-a5b0867ceec7.png)
+
 ## Setup
 
 Install dependencies:
