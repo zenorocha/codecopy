@@ -2,7 +2,7 @@
 
 > Because copy to clipboard buttons should exist on every code snippet.
 
-![Banner](https://cloud.githubusercontent.com/assets/398893/25075516/5960bbfe-22cb-11e7-9409-538e5c702048.png)
+![Banner](https://cloud.githubusercontent.com/assets/398893/25569224/c3e7a724-2dc7-11e7-9ff4-7861c7876028.png)
 
 ## Install
 
