@@ -35,7 +35,8 @@
       "http://stackoverflow.com/*",
       "https://stackoverflow.com/*",
       "https://tableless.com.br/*",
-      "https://laracasts.com/discuss/*"
+      "https://laracasts.com/discuss/*",
+      "https://docs.rs/*"
     ]
   }]
 }
