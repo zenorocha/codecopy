@@ -12,9 +12,25 @@ This browser extension available for:
 |:---:|:---:|
 | [Chrome](https://chrome.google.com/webstore/detail/codecopy/fkbfebkcoelajmhanocgppanfoojcdmg) | [Firefox](https://addons.mozilla.org/en-US/firefox/addon/codecopy/) |
 
-## Screenshots
+## Supported sites
 
-![Screenshots](https://cloud.githubusercontent.com/assets/398893/25569031/5840911a-2dc3-11e7-8445-a5b0867ceec7.png)
+Works with:
+
+* [GitHub](https://github.com/)
+* [MDN](https://developer.mozilla.org/)
+* [Gist](https://gist.github.com/)
+* [StackOverflow](http://stackoverflow.com/)
+* [StackExchange](https://stackexchange.com/sites)
+* [npm](https://www.npmjs.com/)
+* [Medium](https://medium.com/)
+
+[And more](https://github.com/zenorocha/codecopy/blob/master/dist/manifest.json#L22).
+
+If you want to add a new site, feel free to send a pull request :)
+
+## Preview
+
+![Preview](https://cloud.githubusercontent.com/assets/398893/25569031/5840911a-2dc3-11e7-8445-a5b0867ceec7.png)
 
 ## Setup
 
