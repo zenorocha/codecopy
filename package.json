@@ -1,6 +1,6 @@
 {
   "name": "codecopy",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "Because copy to clipboard buttons should exist on every code snippet",
   "main": "src/scripts/main.js",
   "repository": "zenorocha/codecopy",
