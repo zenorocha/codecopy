@@ -36,7 +36,8 @@
       "https://stackoverflow.com/*",
       "https://tableless.com.br/*",
       "https://laracasts.com/discuss/*",
-      "https://docs.rs/*"
+      "https://docs.rs/*",
+      "https://www.digitalocean.com/community/*"
     ]
   }]
 }

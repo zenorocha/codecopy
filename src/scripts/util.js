@@ -6,6 +6,6 @@ export const htmlButton = `
   </button>`;
 
 export const isLargeButton = () => {
-  const sites = /^(github.com|gist.github.com|medium.com|www.npmjs.com|developer.mozilla.org|tableless.com.br|laracasts.com|docs.rs)$/;
+  const sites = /^(github.com|gist.github.com|medium.com|www.npmjs.com|developer.mozilla.org|tableless.com.br|laracasts.com|docs.rs|www.digitalocean.com)$/;
   return sites.exec(document.location.hostname);
 }
