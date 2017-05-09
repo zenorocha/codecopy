@@ -44,7 +44,8 @@
       "http://www.html5gamedevs.com/*",
       "https://forum.imasters.com.br/*",
       "https://docs.rs/*",
-      "https://www.digitalocean.com/community/*"
+      "https://www.digitalocean.com/community/*",
+      "https://nodejs.org/api/*"
     ]
   }]
 }
