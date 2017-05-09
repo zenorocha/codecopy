@@ -34,6 +34,7 @@ clipboard.on('success', (e) => {
 });
 
 // Replace tooltip message when mouse leaves button
+// and prevent page refresh after click button
 
 const btns = document.querySelectorAll('.codecopy-btn');
 
@@ -41,5 +42,9 @@ btns.forEach((btn) => {
   btn.addEventListener('mouseleave', (e) => {
     e.target.setAttribute('aria-label', 'Copy to clipboard');
     e.target.blur();
+  });
+
+  btn.addEventListener('click', (e) => {
+    e.preventDefault()
   });
 });

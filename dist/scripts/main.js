@@ -810,6 +810,7 @@ clipboard.on('success', function (e) {
 });
 
 // Replace tooltip message when mouse leaves button
+// and prevent page refresh after click button
 
 var btns = document.querySelectorAll('.codecopy-btn');
 
@@ -817,6 +818,10 @@ btns.forEach(function (btn) {
   btn.addEventListener('mouseleave', function (e) {
     e.target.setAttribute('aria-label', 'Copy to clipboard');
     e.target.blur();
+  });
+
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
   });
 });
 
