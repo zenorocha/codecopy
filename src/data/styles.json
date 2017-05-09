@@ -1,0 +1,23 @@
+{
+  "small": [
+    "askubuntu.com",
+    "serverfault.com",
+    "stackexchange.com",
+    "stackoverflow.com",
+    "superuser.com"
+  ],
+  "large": [
+    "github.com",
+    "gist.github.com",
+    "medium.com",
+    "www.npmjs.com",
+    "developer.mozilla.org",
+    "tableless.com.br",
+    "laracasts.com",
+    "docs.rs",
+    "www.digitalocean.com"
+  ],
+  "xlarge": [
+    "nodejs.org"
+  ]
+}

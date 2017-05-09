@@ -1,3 +1,5 @@
+import styles from '../data/styles';
+
 export const htmlButton = `
   <button class="codecopy-btn tooltipped tooltipped-s" aria-label="Copy to clipboard">
     <svg height="16" class="codecopy-btn-icon" viewBox="0 0 14 16" version="1.1" width="16" aria-hidden="true">
@@ -5,7 +7,14 @@ export const htmlButton = `
     </svg>
   </button>`;
 
-export const isLargeButton = () => {
-  const sites = /^(github.com|gist.github.com|medium.com|www.npmjs.com|developer.mozilla.org|tableless.com.br|laracasts.com|docs.rs|www.digitalocean.com)$/;
-  return sites.exec(document.location.hostname);
-}
+export function getSiteStyle() {
+  var currentStyle;
+
+  Object.keys(styles).forEach((style) => {
+    if (styles[style].indexOf(document.location.hostname) !== -1) {
+      currentStyle = style;
+    }
+  });
+
+  return currentStyle || 'small';
+};

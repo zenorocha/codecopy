@@ -16,9 +16,6 @@
     opacity: 0;
 
     position: absolute;
-    padding: 2px 6px;
-    right: 0;
-    top: 0;
     z-index: 1;
 
     .codecopy-btn-icon {
@@ -42,8 +39,20 @@
   }
 }
 
-.codecopy.codecopy-lg .codecopy-btn {
+.codecopy.codecopy-small .codecopy-btn {
+  padding: 2px 6px;
+  right: 0;
+  top: 0;
+}
+
+.codecopy.codecopy-large .codecopy-btn {
   padding: 3px 6px;
   right: 5px;
   top: 5px;
+}
+
+.codecopy.codecopy-xlarge .codecopy-btn {
+  padding: 3px 6px;
+  right: 30px;
+  top: 10px;
 }

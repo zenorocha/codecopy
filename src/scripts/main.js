@@ -1,5 +1,9 @@
 import Clipboard from 'clipboard';
-import {htmlButton, isLargeButton} from './util';
+import {htmlButton, getSiteStyle} from './util';
+
+// Get button style based on the current page
+
+const siteStyle = getSiteStyle();
 
 // Scan for code snippets and append buttons
 
@@ -12,12 +16,8 @@ snippets.forEach((snippet) => {
   parent.replaceChild(wrapper, snippet);
   wrapper.appendChild(snippet);
 
-  wrapper.classList.add('codecopy');
+  wrapper.classList.add('codecopy', `codecopy-${siteStyle}`);
   wrapper.firstChild.insertAdjacentHTML('beforebegin', htmlButton);
-
-  if (isLargeButton()) {
-    wrapper.classList.add('codecopy-lg');
-  }
 });
 
 // Add copy to clipboard functionality and user feedback
