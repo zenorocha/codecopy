@@ -1,11 +1,4 @@
 {
-  "small": [
-    "askubuntu.com",
-    "serverfault.com",
-    "stackexchange.com",
-    "stackoverflow.com",
-    "superuser.com"
-  ],
   "large": [
     "github.com",
     "gist.github.com",
@@ -15,7 +8,8 @@
     "tableless.com.br",
     "laracasts.com",
     "docs.rs",
-    "www.digitalocean.com"
+    "www.digitalocean.com",
+    "developer.github.com"
   ],
   "xlarge": [
     "nodejs.org"
