@@ -37,6 +37,7 @@
       "https://stackoverflow.com/*",
       "http://*.stackoverflow.com/*",
       "https://*.stackoverflow.com/*",
+      "http://*.tableless.com.br/*",
       "https://tableless.com.br/*",
       "https://laracasts.com/discuss/*",
       "http://www.mkyong.com/*",
@@ -45,7 +46,9 @@
       "https://forum.imasters.com.br/*",
       "https://docs.rs/*",
       "https://www.digitalocean.com/community/*",
-      "https://nodejs.org/api/*"
+      "https://nodejs.org/api/*",
+      "https://dev.liferay.com/*",
+      "https://softwarepublico.gov.br/*"
     ]
   }]
 }
