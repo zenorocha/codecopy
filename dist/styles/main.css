@@ -232,7 +232,7 @@
       background-image: none;
       border-color: rgba(27, 31, 35, 0.2);
       box-shadow: none; }
-    .codecopy .btn-primary .counter {
+    .codecopy .btn-primary .Counter {
       color: #29b249;
       background-color: #fff; }
   .codecopy .btn-purple {
@@ -257,7 +257,7 @@
       background-image: none;
       border-color: rgba(27, 31, 35, 0.2);
       box-shadow: none; }
-    .codecopy .btn-purple .counter {
+    .codecopy .btn-purple .Counter {
       color: #683cb8;
       background-color: #fff; }
   .codecopy .btn-blue {
@@ -282,7 +282,7 @@
       background-image: none;
       border-color: rgba(27, 31, 35, 0.2);
       box-shadow: none; }
-    .codecopy .btn-blue .counter {
+    .codecopy .btn-blue .Counter {
       color: #0366d6;
       background-color: #fff; }
   .codecopy .btn-danger {
@@ -296,7 +296,7 @@
       background-color: #cb2431;
       background-image: linear-gradient(-180deg, #de4450 0%, #cb2431 90%);
       border-color: rgba(27, 31, 35, 0.5); }
-      .codecopy .btn-danger:hover .counter {
+      .codecopy .btn-danger:hover .Counter {
         color: #fff; }
     .codecopy .btn-danger:active, .codecopy .btn-danger.selected {
       color: #fff;
@@ -314,14 +314,14 @@
     color: #0366d6;
     background-color: #fff;
     background-image: none; }
-    .codecopy .btn-outline .counter {
+    .codecopy .btn-outline .Counter {
       background-color: rgba(0, 0, 0, 0.07); }
     .codecopy .btn-outline:hover, .codecopy .btn-outline:active, .codecopy .btn-outline.selected {
       color: #fff;
       background-color: #0366d6;
       background-image: none;
       border-color: #0366d6; }
-      .codecopy .btn-outline:hover .counter, .codecopy .btn-outline:active .counter, .codecopy .btn-outline.selected .counter {
+      .codecopy .btn-outline:hover .Counter, .codecopy .btn-outline:active .Counter, .codecopy .btn-outline.selected .Counter {
         color: #0366d6;
         background-color: #fff; }
     .codecopy .btn-outline:focus {
