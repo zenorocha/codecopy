@@ -48,7 +48,9 @@
       "https://www.digitalocean.com/community/*",
       "https://nodejs.org/api/*",
       "https://dev.liferay.com/*",
-      "https://softwarepublico.gov.br/*"
+      "https://softwarepublico.gov.br/*",
+      "https://css-tricks.com/*",
+      "http://blog.da2k.com.br/*"
     ]
   }]
 }

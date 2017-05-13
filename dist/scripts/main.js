@@ -768,13 +768,6 @@ module.exports = E;
 
 },{}],9:[function(require,module,exports){
 module.exports={
-  "small": [
-    "askubuntu.com",
-    "serverfault.com",
-    "stackexchange.com",
-    "stackoverflow.com",
-    "superuser.com"
-  ],
   "large": [
     "github.com",
     "gist.github.com",
