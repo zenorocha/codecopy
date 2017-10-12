@@ -452,7 +452,10 @@ if (typeof Element !== 'undefined' && !Element.prototype.matches) {
  */
 function closest (element, selector) {
     while (element && element.nodeType !== DOCUMENT_NODE_TYPE) {
-        if (element.matches(selector)) return element;
+        if (typeof element.matches === 'function' &&
+            element.matches(selector)) {
+          return element;
+        }
         element = element.parentNode;
     }
 }
@@ -768,13 +771,6 @@ module.exports = E;
 
 },{}],9:[function(require,module,exports){
 module.exports={
-  "small": [
-    "askubuntu.com",
-    "serverfault.com",
-    "stackexchange.com",
-    "stackoverflow.com",
-    "superuser.com"
-  ],
   "large": [
     "github.com",
     "gist.github.com",
@@ -785,7 +781,8 @@ module.exports={
     "laracasts.com",
     "docs.rs",
     "www.digitalocean.com",
-    "developer.github.com"
+    "developer.github.com",
+    "css-tricks.com"
   ],
   "xlarge": [
     "nodejs.org"
