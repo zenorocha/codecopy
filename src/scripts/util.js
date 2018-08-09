@@ -7,7 +7,13 @@ export const htmlButton = `
     </svg>
   </button>`;
 
+export function buildGithubButton() {
+         const btnGroup = document.querySelectorAll('.file-actions .BtnGroup')[0];
+         btnGroup && btnGroup.insertAdjacentHTML('beforeend', htmlButton);
+}
+
 export function getSiteStyle() {
+
   var currentStyle;
 
   Object.keys(styles).forEach((style) => {

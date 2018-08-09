@@ -1,5 +1,5 @@
 import Clipboard from 'clipboard';
-import {htmlButton, getSiteStyle} from './util';
+import { buildGithubButton, htmlButton, getSiteStyle} from './util';
 
 // Get button style based on the current page
 
@@ -22,16 +22,29 @@ snippets.forEach((snippet) => {
 
 // Add copy to clipboard functionality and user feedback
 
-const clipboard = new Clipboard('.codecopy-btn', {
-  target: (trigger) => {
-    return trigger.parentNode;
-  }
-});
+  let clipboard;
+  let triggerCb;
 
-clipboard.on('success', (e) => {
-  e.trigger.setAttribute('aria-label', 'Copied!');
-  e.clearSelection();
-});
+  // check if we are on github source page
+  const isGithubSource = window.location.host === "github.com" && window.location.href.indexOf("blob") !== -1;
+
+  if(isGithubSource){
+    triggerCb = () => document.querySelector('tbody');
+    buildGithubButton();
+  }
+  else{
+    triggerCb = (trigger) => trigger.parentNode;
+  }
+
+  clipboard =  new Clipboard('.codecopy-btn', {
+    target: triggerCb
+  });
+
+  clipboard.on('success', (e) => {
+    e.trigger.setAttribute('aria-label', 'Copied!');
+    e.clearSelection();
+  });
+
 
 // Replace tooltip message when mouse leaves button
 // and prevent page refresh after click button
