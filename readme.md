@@ -23,6 +23,7 @@ Works with:
 * [StackExchange](https://stackexchange.com/sites)
 * [npm](https://www.npmjs.com/)
 * [Medium](https://medium.com/)
+* [DEV.to](https://dev.to/)
 
 [And more](https://github.com/zenorocha/codecopy/blob/master/dist/manifest.json#L22).
 
