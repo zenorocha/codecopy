@@ -7,7 +7,7 @@
     position: absolute;
     z-index: 1000000;
     display: none;
-    padding: 5px 8px;
+    padding: 0.5em 0.75em;
     font: normal normal 11px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     -webkit-font-smoothing: subpixel-antialiased;
     color: #fff;
@@ -20,7 +20,7 @@
     white-space: pre;
     pointer-events: none;
     content: attr(aria-label);
-    background: rgba(0, 0, 0, 0.8);
+    background: #1b1f23;
     border-radius: 3px;
     opacity: 0; }
   .codecopy .tooltipped::before {
@@ -29,10 +29,10 @@
     display: none;
     width: 0;
     height: 0;
-    color: rgba(0, 0, 0, 0.8);
+    color: #1b1f23;
     pointer-events: none;
     content: "";
-    border: 5px solid transparent;
+    border: 6px solid transparent;
     opacity: 0; }
 
 @keyframes tooltip-appear {
@@ -57,8 +57,7 @@
   .codecopy .tooltipped-no-delay:active::after,
   .codecopy .tooltipped-no-delay:focus::before,
   .codecopy .tooltipped-no-delay:focus::after {
-    opacity: 1;
-    animation: none; }
+    animation-delay: 0s; }
   .codecopy .tooltipped-multiline:hover::after,
   .codecopy .tooltipped-multiline:active::after,
   .codecopy .tooltipped-multiline:focus::after {
@@ -68,71 +67,86 @@
   .codecopy .tooltipped-sw::after {
     top: 100%;
     right: 50%;
-    margin-top: 5px; }
+    margin-top: 6px; }
   .codecopy .tooltipped-s::before,
   .codecopy .tooltipped-se::before,
   .codecopy .tooltipped-sw::before {
     top: auto;
     right: 50%;
-    bottom: -5px;
-    margin-right: -5px;
-    border-bottom-color: rgba(0, 0, 0, 0.8); }
+    bottom: -7px;
+    margin-right: -6px;
+    border-bottom-color: #1b1f23; }
   .codecopy .tooltipped-se::after {
     right: auto;
     left: 50%;
-    margin-left: -15px; }
+    margin-left: -16px; }
   .codecopy .tooltipped-sw::after {
-    margin-right: -15px; }
+    margin-right: -16px; }
   .codecopy .tooltipped-n::after,
   .codecopy .tooltipped-ne::after,
   .codecopy .tooltipped-nw::after {
     right: 50%;
     bottom: 100%;
-    margin-bottom: 5px; }
+    margin-bottom: 6px; }
   .codecopy .tooltipped-n::before,
   .codecopy .tooltipped-ne::before,
   .codecopy .tooltipped-nw::before {
-    top: -5px;
+    top: -7px;
     right: 50%;
     bottom: auto;
-    margin-right: -5px;
-    border-top-color: rgba(0, 0, 0, 0.8); }
+    margin-right: -6px;
+    border-top-color: #1b1f23; }
   .codecopy .tooltipped-ne::after {
     right: auto;
     left: 50%;
-    margin-left: -15px; }
+    margin-left: -16px; }
   .codecopy .tooltipped-nw::after {
-    margin-right: -15px; }
+    margin-right: -16px; }
   .codecopy .tooltipped-s::after,
   .codecopy .tooltipped-n::after {
     transform: translateX(50%); }
   .codecopy .tooltipped-w::after {
     right: 100%;
     bottom: 50%;
-    margin-right: 5px;
+    margin-right: 6px;
     transform: translateY(50%); }
   .codecopy .tooltipped-w::before {
     top: 50%;
     bottom: 50%;
-    left: -5px;
-    margin-top: -5px;
-    border-left-color: rgba(0, 0, 0, 0.8); }
+    left: -7px;
+    margin-top: -6px;
+    border-left-color: #1b1f23; }
   .codecopy .tooltipped-e::after {
     bottom: 50%;
     left: 100%;
-    margin-left: 5px;
+    margin-left: 6px;
     transform: translateY(50%); }
   .codecopy .tooltipped-e::before {
     top: 50%;
-    right: -5px;
+    right: -7px;
     bottom: 50%;
-    margin-top: -5px;
-    border-right-color: rgba(0, 0, 0, 0.8); }
+    margin-top: -6px;
+    border-right-color: #1b1f23; }
+  .codecopy .tooltipped-align-right-1::after,
+  .codecopy .tooltipped-align-right-2::after {
+    right: 0;
+    margin-right: 0; }
+  .codecopy .tooltipped-align-right-1::before {
+    right: 10px; }
+  .codecopy .tooltipped-align-right-2::before {
+    right: 15px; }
+  .codecopy .tooltipped-align-left-1::after,
+  .codecopy .tooltipped-align-left-2::after {
+    left: 0;
+    margin-left: 0; }
+  .codecopy .tooltipped-align-left-1::before {
+    left: 5px; }
+  .codecopy .tooltipped-align-left-2::before {
+    left: 10px; }
   .codecopy .tooltipped-multiline::after {
     width: max-content;
     max-width: 250px;
-    word-break: break-word;
-    word-wrap: normal;
+    word-wrap: break-word;
     white-space: pre-line;
     border-collapse: separate; }
   .codecopy .tooltipped-multiline.tooltipped-s::after, .codecopy .tooltipped-multiline.tooltipped-n::after {
@@ -148,9 +162,6 @@
     display: inline-block; }
   .codecopy .tooltipped-sticky.tooltipped-multiline::after {
     display: table-cell; }
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    .codecopy .tooltipped-w::after {
-      margin-right: 4.5px; } }
   .codecopy .btn, .codecopy .codecopy-btn {
     position: relative;
     display: inline-block;
@@ -171,10 +182,10 @@
     .codecopy .btn i, .codecopy .codecopy-btn i {
       font-style: normal;
       font-weight: 500;
-      opacity: 0.6; }
+      opacity: 0.75; }
     .codecopy .btn .octicon, .codecopy .codecopy-btn .octicon {
       vertical-align: text-top; }
-    .codecopy .btn .counter, .codecopy .codecopy-btn .counter {
+    .codecopy .btn .Counter, .codecopy .codecopy-btn .Counter {
       color: #586069;
       text-shadow: none;
       background-color: rgba(27, 31, 35, 0.1); }
@@ -197,9 +208,10 @@
     .codecopy .btn:hover, .codecopy .codecopy-btn:hover, .codecopy .btn.hover, .codecopy .hover.codecopy-btn {
       background-color: #e6ebf1;
       background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
-      background-position: 0 -0.5em;
+      background-position: -0.5em;
       border-color: rgba(27, 31, 35, 0.35); }
-    .codecopy .btn:active, .codecopy .codecopy-btn:active, .codecopy .btn.selected, .codecopy .selected.codecopy-btn {
+    .codecopy .btn:active, .codecopy .codecopy-btn:active, .codecopy .btn.selected, .codecopy .selected.codecopy-btn,
+    [open] > .codecopy .btn, [open] > .codecopy .codecopy-btn {
       background-color: #e9ecef;
       background-image: none;
       border-color: rgba(27, 31, 35, 0.35);
@@ -215,13 +227,14 @@
     background-color: #28a745;
     background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%); }
     .codecopy .btn-primary:focus, .codecopy .btn-primary.focus {
-      box-shadow: 0 0 0 0.2em rgba(52, 208, 88, 0.3); }
+      box-shadow: 0 0 0 0.2em rgba(52, 208, 88, 0.4); }
     .codecopy .btn-primary:hover, .codecopy .btn-primary.hover {
       background-color: #269f42;
       background-image: linear-gradient(-180deg, #2fcb53 0%, #269f42 90%);
-      background-position: 0 -0.5em;
+      background-position: -0.5em;
       border-color: rgba(27, 31, 35, 0.5); }
-    .codecopy .btn-primary:active, .codecopy .btn-primary.selected {
+    .codecopy .btn-primary:active, .codecopy .btn-primary.selected,
+    [open] > .codecopy .btn-primary {
       background-color: #279f43;
       background-image: none;
       border-color: rgba(27, 31, 35, 0.5);
@@ -232,7 +245,7 @@
       background-image: none;
       border-color: rgba(27, 31, 35, 0.2);
       box-shadow: none; }
-    .codecopy .btn-primary .counter {
+    .codecopy .btn-primary .Counter {
       color: #29b249;
       background-color: #fff; }
   .codecopy .btn-purple {
@@ -240,13 +253,14 @@
     background-color: #643ab0;
     background-image: linear-gradient(-180deg, #7e55c7 0%, #643ab0 90%); }
     .codecopy .btn-purple:focus, .codecopy .btn-purple.focus {
-      box-shadow: 0 0 0 0.2em rgba(126, 85, 199, 0.3); }
+      box-shadow: 0 0 0 0.2em rgba(126, 85, 199, 0.4); }
     .codecopy .btn-purple:hover, .codecopy .btn-purple.hover {
       background-color: #5f37a8;
       background-image: linear-gradient(-180deg, #784ec5 0%, #5f37a8 90%);
-      background-position: 0 -0.5em;
+      background-position: -0.5em;
       border-color: rgba(27, 31, 35, 0.5); }
-    .codecopy .btn-purple:active, .codecopy .btn-purple.selected {
+    .codecopy .btn-purple:active, .codecopy .btn-purple.selected,
+    [open] > .codecopy .btn-purple {
       background-color: #613ca4;
       background-image: none;
       border-color: rgba(27, 31, 35, 0.5);
@@ -257,7 +271,7 @@
       background-image: none;
       border-color: rgba(27, 31, 35, 0.2);
       box-shadow: none; }
-    .codecopy .btn-purple .counter {
+    .codecopy .btn-purple .Counter {
       color: #683cb8;
       background-color: #fff; }
   .codecopy .btn-blue {
@@ -265,13 +279,14 @@
     background-color: #0361cc;
     background-image: linear-gradient(-180deg, #0679fc 0%, #0361cc 90%); }
     .codecopy .btn-blue:focus, .codecopy .btn-blue.focus {
-      box-shadow: 0 0 0 0.2em rgba(6, 121, 252, 0.3); }
+      box-shadow: 0 0 0 0.2em rgba(6, 121, 252, 0.4); }
     .codecopy .btn-blue:hover, .codecopy .btn-blue.hover {
       background-color: #035cc2;
       background-image: linear-gradient(-180deg, #0374f4 0%, #035cc2 90%);
-      background-position: 0 -0.5em;
+      background-position: -0.5em;
       border-color: rgba(27, 31, 35, 0.5); }
-    .codecopy .btn-blue:active, .codecopy .btn-blue.selected {
+    .codecopy .btn-blue:active, .codecopy .btn-blue.selected,
+    [open] > .codecopy .btn-blue {
       background-color: #045cc1;
       background-image: none;
       border-color: rgba(27, 31, 35, 0.5);
@@ -282,7 +297,7 @@
       background-image: none;
       border-color: rgba(27, 31, 35, 0.2);
       box-shadow: none; }
-    .codecopy .btn-blue .counter {
+    .codecopy .btn-blue .Counter {
       color: #0366d6;
       background-color: #fff; }
   .codecopy .btn-danger {
@@ -290,15 +305,16 @@
     background-color: #fafbfc;
     background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%); }
     .codecopy .btn-danger:focus {
-      box-shadow: 0 0 0 0.2em rgba(203, 36, 49, 0.3); }
+      box-shadow: 0 0 0 0.2em rgba(203, 36, 49, 0.4); }
     .codecopy .btn-danger:hover {
       color: #fff;
       background-color: #cb2431;
       background-image: linear-gradient(-180deg, #de4450 0%, #cb2431 90%);
       border-color: rgba(27, 31, 35, 0.5); }
-      .codecopy .btn-danger:hover .counter {
+      .codecopy .btn-danger:hover .Counter {
         color: #fff; }
-    .codecopy .btn-danger:active, .codecopy .btn-danger.selected {
+    .codecopy .btn-danger:active, .codecopy .btn-danger.selected,
+    [open] > .codecopy .btn-danger {
       color: #fff;
       background-color: #b5202c;
       background-image: none;
@@ -314,23 +330,25 @@
     color: #0366d6;
     background-color: #fff;
     background-image: none; }
-    .codecopy .btn-outline .counter {
-      background-color: rgba(0, 0, 0, 0.07); }
-    .codecopy .btn-outline:hover, .codecopy .btn-outline:active, .codecopy .btn-outline.selected {
+    .codecopy .btn-outline .Counter {
+      background-color: rgba(27, 31, 35, 0.07); }
+    .codecopy .btn-outline:hover, .codecopy .btn-outline:active, .codecopy .btn-outline.selected,
+    [open] > .codecopy .btn-outline {
       color: #fff;
       background-color: #0366d6;
       background-image: none;
       border-color: #0366d6; }
-      .codecopy .btn-outline:hover .counter, .codecopy .btn-outline:active .counter, .codecopy .btn-outline.selected .counter {
+      .codecopy .btn-outline:hover .Counter, .codecopy .btn-outline:active .Counter, .codecopy .btn-outline.selected .Counter,
+      [open] > .codecopy .btn-outline .Counter {
         color: #0366d6;
         background-color: #fff; }
     .codecopy .btn-outline:focus {
       border-color: #0366d6;
-      box-shadow: 0 0 0 0.2em rgba(3, 102, 214, 0.3); }
+      box-shadow: 0 0 0 0.2em rgba(3, 102, 214, 0.4); }
     .codecopy .btn-outline:disabled, .codecopy .btn-outline.disabled {
       color: rgba(27, 31, 35, 0.3);
       background-color: #fff;
-      border-color: rgba(0, 0, 0, 0.15);
+      border-color: rgba(27, 31, 35, 0.15);
       box-shadow: none; }
   .codecopy .btn-with-count {
     float: left;
@@ -413,6 +431,12 @@
     .codecopy .btn-link:disabled, .codecopy .btn-link:disabled:hover {
       color: rgba(88, 96, 105, 0.5);
       cursor: default; }
+  .codecopy .details-reset > summary {
+    list-style: none; }
+  .codecopy .details-reset > summary::before {
+    display: none; }
+  .codecopy .details-reset > summary::-webkit-details-marker {
+    display: none; }
   .codecopy .BtnGroup {
     display: inline-block;
     vertical-align: middle; }
@@ -441,29 +465,57 @@
     .codecopy .BtnGroup-item.selected, .codecopy .BtnGroup-item:focus, .codecopy .BtnGroup-item:active, .codecopy .BtnGroup-item:hover {
       border-right-width: 1px; }
       .codecopy .BtnGroup-item.selected + .BtnGroup-item,
+      .codecopy .BtnGroup-item.selected + .BtnGroup-parent .BtnGroup-item,
       .codecopy .BtnGroup-item.selected + .BtnGroup-form .BtnGroup-item, .codecopy .BtnGroup-item:focus + .BtnGroup-item,
+      .codecopy .BtnGroup-item:focus + .BtnGroup-parent .BtnGroup-item,
       .codecopy .BtnGroup-item:focus + .BtnGroup-form .BtnGroup-item, .codecopy .BtnGroup-item:active + .BtnGroup-item,
+      .codecopy .BtnGroup-item:active + .BtnGroup-parent .BtnGroup-item,
       .codecopy .BtnGroup-item:active + .BtnGroup-form .BtnGroup-item, .codecopy .BtnGroup-item:hover + .BtnGroup-item,
+      .codecopy .BtnGroup-item:hover + .BtnGroup-parent .BtnGroup-item,
       .codecopy .BtnGroup-item:hover + .BtnGroup-form .BtnGroup-item {
         border-left-width: 0; }
+  .codecopy .BtnGroup-parent,
   .codecopy .BtnGroup-form {
     float: left; }
+    .codecopy .BtnGroup-parent:first-child .BtnGroup-item,
     .codecopy .BtnGroup-form:first-child .BtnGroup-item {
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px; }
+    .codecopy .BtnGroup-parent:last-child .BtnGroup-item,
     .codecopy .BtnGroup-form:last-child .BtnGroup-item {
       border-right-width: 1px;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px; }
+    .codecopy .BtnGroup-parent .BtnGroup-item,
     .codecopy .BtnGroup-form .BtnGroup-item {
       border-right-width: 0;
       border-radius: 0; }
-    .codecopy .BtnGroup-form.selected .BtnGroup-item, .codecopy .BtnGroup-form:focus .BtnGroup-item, .codecopy .BtnGroup-form:active .BtnGroup-item, .codecopy .BtnGroup-form:hover .BtnGroup-item {
+    .codecopy .BtnGroup-parent.selected .BtnGroup-item, .codecopy .BtnGroup-parent:focus .BtnGroup-item, .codecopy .BtnGroup-parent:active .BtnGroup-item, .codecopy .BtnGroup-parent:hover .BtnGroup-item,
+    .codecopy .BtnGroup-form.selected .BtnGroup-item,
+    .codecopy .BtnGroup-form:focus .BtnGroup-item,
+    .codecopy .BtnGroup-form:active .BtnGroup-item,
+    .codecopy .BtnGroup-form:hover .BtnGroup-item {
       border-right-width: 1px; }
+    .codecopy .BtnGroup-parent.selected + .BtnGroup-item,
+    .codecopy .BtnGroup-parent.selected + .BtnGroup-parent .BtnGroup-item,
+    .codecopy .BtnGroup-parent.selected + .BtnGroup-form .BtnGroup-item, .codecopy .BtnGroup-parent:focus + .BtnGroup-item,
+    .codecopy .BtnGroup-parent:focus + .BtnGroup-parent .BtnGroup-item,
+    .codecopy .BtnGroup-parent:focus + .BtnGroup-form .BtnGroup-item, .codecopy .BtnGroup-parent:active + .BtnGroup-item,
+    .codecopy .BtnGroup-parent:active + .BtnGroup-parent .BtnGroup-item,
+    .codecopy .BtnGroup-parent:active + .BtnGroup-form .BtnGroup-item, .codecopy .BtnGroup-parent:hover + .BtnGroup-item,
+    .codecopy .BtnGroup-parent:hover + .BtnGroup-parent .BtnGroup-item,
+    .codecopy .BtnGroup-parent:hover + .BtnGroup-form .BtnGroup-item,
     .codecopy .BtnGroup-form.selected + .BtnGroup-item,
-    .codecopy .BtnGroup-form.selected + .BtnGroup-form .BtnGroup-item, .codecopy .BtnGroup-form:focus + .BtnGroup-item,
-    .codecopy .BtnGroup-form:focus + .BtnGroup-form .BtnGroup-item, .codecopy .BtnGroup-form:active + .BtnGroup-item,
-    .codecopy .BtnGroup-form:active + .BtnGroup-form .BtnGroup-item, .codecopy .BtnGroup-form:hover + .BtnGroup-item,
+    .codecopy .BtnGroup-form.selected + .BtnGroup-parent .BtnGroup-item,
+    .codecopy .BtnGroup-form.selected + .BtnGroup-form .BtnGroup-item,
+    .codecopy .BtnGroup-form:focus + .BtnGroup-item,
+    .codecopy .BtnGroup-form:focus + .BtnGroup-parent .BtnGroup-item,
+    .codecopy .BtnGroup-form:focus + .BtnGroup-form .BtnGroup-item,
+    .codecopy .BtnGroup-form:active + .BtnGroup-item,
+    .codecopy .BtnGroup-form:active + .BtnGroup-parent .BtnGroup-item,
+    .codecopy .BtnGroup-form:active + .BtnGroup-form .BtnGroup-item,
+    .codecopy .BtnGroup-form:hover + .BtnGroup-item,
+    .codecopy .BtnGroup-form:hover + .BtnGroup-parent .BtnGroup-item,
     .codecopy .BtnGroup-form:hover + .BtnGroup-form .BtnGroup-item {
       border-left-width: 0; }
   .codecopy .codecopy-btn {
