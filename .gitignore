@@ -1,3 +1,6 @@
 *.xpi
 *.zip
 node_modules
+.idea
+dist/scripts
+dist/styles
