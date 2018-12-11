@@ -1,4 +1,4 @@
-import Clipboard from 'clipboard';
+import ClipboardJS from 'clipboard';
 import {htmlButton, getSiteStyle} from './util';
 
 // Get button style based on the current page
@@ -22,7 +22,7 @@ snippets.forEach((snippet) => {
 
 // Add copy to clipboard functionality and user feedback
 
-const clipboard = new Clipboard('.codecopy-btn', {
+const clipboard = new ClipboardJS('.codecopy-btn', {
   target: (trigger) => {
     return trigger.parentNode;
   }

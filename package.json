@@ -6,9 +6,9 @@
   "repository": "zenorocha/codecopy",
   "license": "MIT",
   "dependencies": {
-    "clipboard": "1.6.0",
-    "primer-buttons": "1.0.1",
-    "primer-tooltips": "0.5.3"
+    "clipboard": "2.0.4",
+    "primer-buttons": "2.6.1",
+    "primer-tooltips": "1.5.8"
   },
   "devDependencies": {
     "babel-preset-es2015": "6.9.0",
