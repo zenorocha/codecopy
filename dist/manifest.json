@@ -23,6 +23,7 @@
       "https://developer.mozilla.org/*",
       "https://medium.com/*",
       "https://www.npmjs.com/*",
+      "https://*.gitbook.com/*",
       "https://github.com/*",
       "https://gist.github.com/*",
       "https://developer.github.com/*",
