@@ -24,6 +24,7 @@
       "https://medium.com/*",
       "https://www.npmjs.com/*",
       "https://*.gitbook.com/*",
+      "https://*.gitbooks.io/*",
       "https://github.com/*",
       "https://gist.github.com/*",
       "https://developer.github.com/*",
