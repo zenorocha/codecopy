@@ -12,43 +12,49 @@
     }
   },
   "icons": {
-    "16" : "images/icon-16.png",
-    "48" : "images/icon-48.png",
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
     "128": "images/icon-128.png"
   },
-  "content_scripts": [{
-    "css": ["styles/main.css"],
-    "js": ["scripts/main.js"],
-    "matches": [
-      "https://developer.mozilla.org/*",
-      "https://medium.com/*",
-      "https://www.npmjs.com/*",
-      "https://*.gitbook.com/*",
-      "https://*.gitbooks.io/*",
-      "https://github.com/*",
-      "https://gist.github.com/*",
-      "https://developer.github.com/*",
-      "http://stackexchange.com/*",
-      "https://stackexchange.com/*",
-      "http://*.stackexchange.com/*",
-      "https://*.stackexchange.com/*",
-      "https://serverfault.com/*",
-      "https://superuser.com/*",
-      "https://askubuntu.com/*",
-      "http://stackoverflow.com/*",
-      "https://stackoverflow.com/*",
-      "http://*.stackoverflow.com/*",
-      "https://*.stackoverflow.com/*",
-      "https://tableless.com.br/*",
-      "https://laracasts.com/discuss/*",
-      "http://www.mkyong.com/*",
-      "https://www.mkyong.com/*",
-      "http://www.html5gamedevs.com/*",
-      "https://forum.imasters.com.br/*",
-      "https://docs.rs/*",
-      "https://www.digitalocean.com/community/*",
-      "https://nodejs.org/api/*",
-      "https://css-tricks.com/*"
-    ]
-  }]
+  "content_scripts": [
+    {
+      "css": [
+        "styles/main.css"
+      ],
+      "js": [
+        "scripts/main.js"
+      ],
+      "matches": [
+        "https://developer.mozilla.org/*",
+        "https://medium.com/*",
+        "https://www.npmjs.com/*",
+        "https://*.gitbook.com/*",
+        "https://*.gitbooks.io/*",
+        "https://github.com/*/*",
+        "https://gist.github.com/*",
+        "https://developer.github.com/*",
+        "http://stackexchange.com/*",
+        "https://stackexchange.com/*",
+        "http://*.stackexchange.com/*",
+        "https://*.stackexchange.com/*",
+        "https://serverfault.com/*",
+        "https://superuser.com/*",
+        "https://askubuntu.com/*",
+        "http://stackoverflow.com/*",
+        "https://stackoverflow.com/*",
+        "http://*.stackoverflow.com/*",
+        "https://*.stackoverflow.com/*",
+        "https://tableless.com.br/*",
+        "https://laracasts.com/discuss/*",
+        "http://www.mkyong.com/*",
+        "https://www.mkyong.com/*",
+        "http://www.html5gamedevs.com/*",
+        "https://forum.imasters.com.br/*",
+        "https://docs.rs/*",
+        "https://www.digitalocean.com/community/*",
+        "https://nodejs.org/api/*",
+        "https://css-tricks.com/*"
+      ]
+    }
+  ]
 }
