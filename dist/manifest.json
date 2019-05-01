@@ -47,7 +47,8 @@
       "https://forum.imasters.com.br/*",
       "https://docs.rs/*",
       "https://www.digitalocean.com/community/*",
-      "https://nodejs.org/api/*"
+      "https://nodejs.org/api/*",
+      "https://css-tricks.com/*"
     ]
   }]
 }
