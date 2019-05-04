@@ -24,9 +24,14 @@ Works with:
 * [npm](https://www.npmjs.com/)
 * [Medium](https://medium.com/)
 
-[And more](https://github.com/zenorocha/codecopy/blob/master/dist/manifest.json#L22).
+[And more](https://github.com/zenorocha/codecopy/blob/7c638611f7ad01d923361f7fedfe3933b35e114c/dist/manifest.json#L27).
 
 If you want to add a new site, feel free to send a pull request :)
+
+### Custom domains
+
+You can also enable CodeCopy on custom domains or Github Enterprise.
+Right click on CodeCopy's icon in the the toolbar  and select **Enable Refined GitHub on this domain**.
 
 ## Preview
 

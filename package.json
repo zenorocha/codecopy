@@ -8,7 +8,9 @@
   "dependencies": {
     "clipboard": "2.0.4",
     "primer-buttons": "2.6.1",
-    "primer-tooltips": "1.5.8"
+    "primer-tooltips": "1.5.8",
+    "webext-domain-permission-toggle": "^0.1.0",
+    "webext-dynamic-content-scripts": "^5.0.2"
   },
   "devDependencies": {
     "babel-preset-es2015": "6.9.0",
@@ -22,7 +24,7 @@
   "scripts": {
     "start": "npm run build",
     "build": "npm run build:scripts && npm run build:styles",
-    "build:scripts": "browserify src/scripts/main.js -t [ babelify --presets es2015 ] -o dist/scripts/main.js",
+    "build:scripts": "browserify src/scripts/main.js -t [ babelify --presets es2015 ] -o dist/scripts/main.js && browserify src/scripts/background.js -t [ babelify --presets es2015 ] -o dist/scripts/background.js",
     "build:styles": "node-sass src/styles/main.scss dist/styles/main.css -q --include-path node_modules",
     "watch": "parallelshell 'npm run watch:scripts' 'npm run watch:styles'",
     "watch:scripts": "onchange 'src/scripts/*.js' -- npm run build:scripts",
