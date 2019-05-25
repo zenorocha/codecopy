@@ -1,4 +1,4 @@
-import styles from '../data/styles';
+import styles from "../data/styles";
 
 export const htmlButton = `
   <button class="codecopy-btn tooltipped tooltipped-s" aria-label="Copy to clipboard">
@@ -8,19 +8,21 @@ export const htmlButton = `
   </button>`;
 
 export function buildGithubButton() {
-         const btnGroup = document.querySelectorAll('.file-actions .BtnGroup')[0];
-         btnGroup && btnGroup.insertAdjacentHTML('beforeend', htmlButton);
+  const btnGroup = document.querySelectorAll(".BtnGroup");
+  if (btnGroup.length !== 0) {
+    const btnGroupTarget = btnGroup[btnGroup.length - 1];
+    btnGroupTarget.insertAdjacentHTML("beforeend", htmlButton);
+  }
 }
 
 export function getSiteStyle() {
-
   var currentStyle;
 
-  Object.keys(styles).forEach((style) => {
+  Object.keys(styles).forEach(style => {
     if (styles[style].indexOf(document.location.hostname) !== -1) {
       currentStyle = style;
     }
   });
 
-  return currentStyle || 'small';
-};
+  return currentStyle || "small";
+}
