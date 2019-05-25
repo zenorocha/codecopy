@@ -1,4 +1,6 @@
-import Clipboard from "clipboard";
+import "webext-dynamic-content-scripts";
+
+import ClipboardJS from "clipboard";
 import { buildGithubButton, htmlButton, getSiteStyle } from "./util";
 
 // Get button style based on the current page
@@ -37,7 +39,7 @@ if (isGithubSource) {
   triggerCb = trigger => trigger.parentNode;
 }
 
-clipboard = new Clipboard(".codecopy-btn", {
+clipboard = new ClipboardJS(".codecopy-btn", {
   target: triggerCb
 });
 
