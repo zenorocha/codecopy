@@ -31,7 +31,7 @@ If you want to add a new site, feel free to send a pull request :)
 ### Custom domains
 
 You can also enable CodeCopy on custom domains or Github Enterprise.
-Right click on CodeCopy's icon in the the toolbar  and select **Enable Refined GitHub on this domain**.
+Right click on CodeCopy's icon in the the toolbar  and select **Enable CodeCopy on this domain**.
 
 ## Preview
 
