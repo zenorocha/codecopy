@@ -1,5 +1,3 @@
-import 'webext-dynamic-content-scripts';
-
 import ClipboardJS from 'clipboard';
 import {htmlButton, getSiteStyle} from './util';
 

@@ -6,11 +6,10 @@
   "repository": "zenorocha/codecopy",
   "license": "MIT",
   "dependencies": {
-    "clipboard": "2.0.4",
-    "primer-buttons": "2.6.1",
-    "primer-tooltips": "1.5.8",
+    "@primer/css": "^15.2.0",
+    "clipboard": "^2.0.6",
     "webext-domain-permission-toggle": "^1.0.1",
-    "webext-dynamic-content-scripts": "^5.0.2"
+    "webext-dynamic-content-scripts": "^7.0.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",

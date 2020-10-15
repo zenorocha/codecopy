@@ -1,6 +1,6 @@
 .codecopy {
-  @import "primer-tooltips/index.scss";
-  @import "primer-buttons/index.scss";
+  @import "@primer/css/tooltips/index.scss";
+  @import "@primer/css/buttons/index.scss";
 
   position: relative;
   overflow: visible;
